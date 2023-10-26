@@ -1,0 +1,24 @@
+	:root{
+	--light-color: #b3cad8;
+	--normal-color: #647c5e;
+	--dark-color: #204a59;
+	
+	--black-color: #19191a; /* Contrast with light-color */
+	--white-color: #ffffff; /* Contrast with normal-color and dark-color */
+	
+	--header-background-color: #c8d3d5;
+	--header-elements-color: #465856;
+	
+	--vertical-menu-background-color: #fff;
+	
+	--footer-background-color: #c8d3d5;
+	--footer-text-color: #465856;
+	
+	/* Diferencia de +- 5% */
+	--buttons-hover-light: #9ab8cb; /* - 5% */
+	--buttons-hover-normal: #52664d; /* - 5% */
+	--buttons-hover-dark: #295d70; /* + 5% */
+	
+	--modal-background-color: #b3cad8;
+	--modal-header-color: #9ab8cb; /* -5% del bg color */
+	}
