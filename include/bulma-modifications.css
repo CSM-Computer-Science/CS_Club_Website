@@ -1,0 +1,65 @@
+	/* Colors */
+	.backgroundLight{ background-color: var(--light-color) !important; color: var(--black-color) !important; }
+	.backgroundNormal{ background-color: var(--normal-color) !important; color: var(--white-color) !important; }
+	.backgroundDark{ background-color: var(--dark-color) !important; color: var(--white-color) !important; }
+	
+	.button.backgroundLight:hover{ transition: 0.2s; background-color: var(--buttons-hover-light) !important; }
+	.button.backgroundNormal:hover{ transition: 0.2s; background-color: var(--buttons-hover-normal) !important; }
+	.button.backgroundDark:hover{ transition: 0.2s; background-color: var(--buttons-hover-dark) !important; }
+	
+	/* Footer */
+	.footer{ background-color: var(--footer-background-color); }
+	.footer a{ color: var(--footer-text-color); }
+	.footer a:hover{ opacity: 0.8; }
+	
+	/* Panel block (filters) */
+	.panel-block.is-active{ background-color: var(--light-color); }
+	
+	/* Navbar */
+	.navbar-item, .navbar-link{ color: var(--black-color); border-bottom: 4px solid transparent; }
+	.navbar-dropdown .navbar-item{ border-left: 4px solid transparent; }
+	.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover:not(.navbar-brand .navbar-item){ color: var(--header-elements-color) !important; background-color: transparent !important; border-bottom: 4px solid var(--header-elements-color); }
+	.navbar-dropdown .navbar-item:hover{ border-left: 4px solid var(--header-elements-color); border-bottom: 4px solid transparent !important; }
+	.navbar-link:not(.is-arrowless)::after{ border-color: var(--header-elements-color) !important; }
+	.navbar{ background-color: var(--header-background-color); box-shadow: none; }
+	.has-dropdown .navbar-link, .has-dropdown .navbar-link:hover{ border-bottom: 0 !important; }
+	@media screen and (max-width: 1023px){ .navbar-menu{ background-color: var(--header-background-color); }}
+	@media screen and (min-width: 1024px){ .navbar-dropdown{ background-color: var(--header-background-color); } .navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link{ background-color: transparent !important; }}
+	.navbar-burger{ color: var(--black-color); }
+	
+	/* Other */
+	button.pcr-button{ width: 100% !important; border: 1px solid var(--dark-color); }
+	.list-item{ padding-left: 0 !important; }
+	.select2-container{ width: 100% !important; }
+	.input:active, .input:focus, .is-active.input, .is-active.textarea, .is-focused.input, .is-focused.textarea, .select select.is-active, .select select.is-focused, .select select:active, .select select:focus, .textarea:active, .textarea:focus{ border-color: var(--dark-color); }
+	.tabs li.is-active a{ border-bottom: 3px solid var(--dark-color); color: var(--dark-color); }
+	.level.is-mobile{ overflow-x: auto; overflow-y: hidden; }
+	.label:not(.box .label), .box.backgroundNormal .label{ color: var(--black-color); }
+	.pagination-previous, .pagination-next{ background-color: #fff; }
+	.is-checkradio[type=checkbox]:checked+label::before, .is-checkradio[type=checkbox]:checked+label:before, .is-checkradio[type=radio]:checked+label::before, .is-checkradio[type=radio]:checked+label:before{ background-color: var(--black-color); }
+	.button{ border-color: transparent !important; }
+	
+	/* Progress bar */
+	.progressBar:not(.steps-segment.is-active ~ .steps-segment .steps-marker){ background-color: var(--dark-color) !important; color: #fff !important; }
+	.steps-segment.is-active:after, .steps-segment.is-active ~ .steps-segment:after{ background-color: #dbdbdb !important; }
+	.steps-segment:after{ background-color: var(--dark-color) !important; }
+	
+	/* Vertical menu */
+	.menu-list a{ color: var(--black-color); transition: .2s; }
+	.menu-list a:hover{ background-color: var(--light-color); color: var(--black-color); }
+	
+	/* Quickview */
+	.quickviewOverlay{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(169,171,174,0.3);
+	z-index: 10;
+	cursor: pointer;
+	-webkit-backdrop-filter: blur(1px);
+	backdrop-filter: blur(1px);
+	}
+	.quickviewOverlay.is-active{ display: block; }
