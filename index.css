@@ -5,6 +5,9 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
 }
 
 header {
@@ -12,6 +15,7 @@ header {
     color: white;
     text-align: center;
     padding: 1em;
+    padding-bottom: 10px;
 }
 
 nav {
@@ -47,12 +51,16 @@ section {
     padding: 20px;
     flex: 1;
 }
+.footer-container {
+    flex: 0; 
+    margin-top: auto;
+}
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #48c3ec;
+    color: black;
     text-align: center;
-    padding: 1em;
+    padding: 0.25em;
      width: 100%;
 }
 
@@ -63,7 +71,8 @@ footer {
     justify-content: flex-end;
     position: fixed;
     top: 0;
-    width: 100%;
+    right: 0;
+    width: auto;
     margin-top: auto;
 
 }
@@ -71,14 +80,15 @@ footer {
 .toolbar a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
+    font-size: 20px;
 
 }
 
 .toolbar a:not(:last-child){
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .instagram-logo{
-    margin-top: 20px;
+    margin-top: 50px;
 }
