@@ -42,8 +42,8 @@ body {
 
 /* Navbar styles */
 .navbar {
-    background-color: #333;
-    color: white;
+    background-color: #C8D3D5;
+    color: #C8D3D5;
     padding: 15px 0;
     position: fixed;
     top: 0;
@@ -84,8 +84,8 @@ main {
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #C8D3D5;
+    color: #415642;
     padding: 50px 0;
 }
 
