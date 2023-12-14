@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,75 +11,75 @@
     ></script>
   </head>
   <body>
-    <div class="toolbar">
-      <a href="index.html">Home</a>
-      <a href="Calendar.html">Calendar</a>
-      <a href="About.html">Contact Us</a>
-    </div>
-
-    <header>
-      <h1>Welcome to the Computer Science Club</h1>
-    </header>
-  
-
-    <section id="calendar">
-      <h2>Calendar</h2>
-      <p>
-        add meeting times too Stay tuned for our upcoming events. Exciting
-        activities and learning opportunities await!
-      </p>
-    </section>
-    <footer>
-      <p>&copy; Computer Science Club</p>
-      <div class="instagram-logo">
-        <a
-          href="https://www.instagram.com/csmcompsci/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">CSM Computer Science Club</h1>
+        <ul class="nav-links">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="About.html">Contact Us</a></li>
+        </ul>
       </div>
-      <footer>
-        <div class="container">
-          <div class="footer-col">
-            <h2>CSM Computer Science Club</h2>
-            <p>Connect with us:</p>
-            <div class="social-icons">
-              <a href="#" target="_blank" rel="noopener noreferrer"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </div>
-          </div>
-  
-          <div class="footer-col">
-            <h2>Contact Us</h2>
-            <form action="">
-              <label for="name">Your Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-              />
-  
-              <label for="email">Your Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-              />
-  
-              <input type="submit" value="Submit" />
-            </form>
+    </nav>
+
+    <header class="hero">
+      <div class="overlay">
+        <h1>Calendar</h1>
+        <p>add meeting times // google calendar?</p>
+      </div>
+    </header>
+
+    <main><!-- kanyes album--></main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-col">
+          <h2>CSM Computer Science Club</h2>
+          <p>Connect with us:</p>
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/csmcompsci/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://discord.gg/SZk7XsMU"
+              class="discord-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-discord"></i>
+            </a>
           </div>
         </div>
-  
-        <p>&copy; 2023 Computer Science Club</p>
-      </footer>
-    </body>
-  </html>
-  
+
+        <div class="footer-col">
+          <h2>Contact Us</h2>
+          <form action="">
+            <label for="name">Your Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+            />
+
+            <label for="email">Your Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+
+      <p>&copy; Computer Science Club</p>
+    </footer>
   </body>
 </html>

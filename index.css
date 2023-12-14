@@ -1,49 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@500&display=swap');
-* {
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    padding-bottom: 10px;
-}
-
-header.hero{
-    background-color: #333;
-    color: white;
-    text-align: center;
+header, header.hero {
+    background-color: #7eaa85;
+    color: rgb(26, 54, 24);
     padding: 2em;
+    text-align: center;
 }
 
-header.hero h1{
-    font-size: 2em;
-    margin-bottom: 10px; 
-}
-body{
-    font-family: 'Poppins', sans-serif;
-}
-h1{
-    font-size: 2em;
-    margin-bottom: 10px;
+nav.navbar {
+    background-color: #3b4a3f;
 }
 
-nav {
-    background-color: #444;
-}
-
-nav.navbar{
-    background-color: #444;
-}
-
-nav.navbar .container{
+nav.navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +25,7 @@ nav.navbar .container{
 }
 
 nav.navbar h1.logo {
-    color: white;
+    color: rgb(189, 240, 198);
     font-size: 1.5em;
 }
 
@@ -65,53 +39,20 @@ nav.navbar ul.nav-links li {
 }
 
 nav.navbar ul.nav-links a {
-    color: white;
+    color: rgb(177, 206, 188);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    justify-content: flex-end;
-
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-/* Main content styles (customize as needed) */
 main {
-    padding: 2em;
+    padding: 50px;
 }
 
-/* Footer styles */
 footer {
-    background-color: #48c3ec;
-    color: black;
+    background-color: #61786b;
+    color: rgb(24, 42, 20);
     text-align: center;
-    padding: 1em;
-     width: 100%;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-between;
     padding: 1em;
 }
 
@@ -130,13 +71,12 @@ footer .container {
 }
 
 .social-icons a {
-    color: rgb(64, 112, 84);
+    color: rgb(137, 183, 156);
     text-decoration: none;
     font-size: 1.5em;
     margin-right: 20px;
 }
 
-/* Contact form styles */
 form {
     display: flex;
     flex-direction: column;
@@ -144,7 +84,7 @@ form {
 
 form label {
     margin-bottom: 5px;
-    color: white;
+    color: rgb(41, 51, 45);
 }
 
 form input {
@@ -155,15 +95,14 @@ form input {
 }
 
 form input[type="submit"] {
-    background-color: #333;
-    color: white;
+    background-color: #193519;
+    color: rgb(197, 221, 203);
     cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background-color: #555;
+    background-color: #819783;
 }
-
 
 /*font-family: 'Poppins', sans-serif;
 font-family: 'Ubuntu', sans-serif;
