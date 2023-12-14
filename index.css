@@ -16,8 +16,59 @@ header {
     padding-bottom: 10px;
 }
 
+header.hero{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+header.hero h1{
+    font-size: 2em;
+    margin-bottom: 10px; 
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
 nav {
     background-color: #444;
+}
+
+nav.navbar{
+    background-color: #444;
+}
+
+nav.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+nav.navbar h1.logo {
+    color: white;
+    font-size: 1.5em;
+}
+
+nav.navbar ul.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+nav.navbar ul.nav-links li {
+    margin: 0 15px;
+}
+
+nav.navbar ul.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 nav ul {
@@ -46,7 +97,7 @@ nav a {
 
 /* Main content styles (customize as needed) */
 main {
-    padding: 50px;
+    padding: 2em;
 }
 
 /* Footer styles */
@@ -54,12 +105,19 @@ footer {
     background-color: #48c3ec;
     color: black;
     text-align: center;
-    padding: 0.25em;
+    padding: 1em;
      width: 100%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
 }
 
 .footer-col {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .footer-col h2 {
@@ -72,7 +130,7 @@ footer {
 }
 
 .social-icons a {
-    color: white;
+    color: rgb(64, 112, 84);
     text-decoration: none;
     font-size: 1.5em;
     margin-right: 20px;
@@ -106,8 +164,6 @@ form input[type="submit"]:hover {
     background-color: #555;
 }
 
-/*font-family: 'Poppins', sans-serif;
-font-family: 'Ubuntu', sans-serif;
 
 /*font-family: 'Poppins', sans-serif;
 font-family: 'Ubuntu', sans-serif;
