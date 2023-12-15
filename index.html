@@ -16,7 +16,7 @@
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="#home" class="navbar__logo">Computer Science Club</a>
+        <span class="navbar__logo">Computer Science Club</span>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
           <span class="bar"></span>
@@ -44,64 +44,90 @@
         <h1>Welcome!</h1>
       </div>
     </header>
-
     <!-- About Section -->
-    <main class="main" id="about">
+    <section class="main" id="about">
       <div class="main__container">
-        <div class="main__img--container">
-          <div class="main__img--card"><i class="fas fa-laptop-code"></i></div>
-        </div>
         <div class="main__content">
-          <h1>What We Do</h1>
-          <h2>
+          <h1>About Us</h1>
+          <h2>What We Do</h2>
+          <p>
             The CSM Computer Science club is a student-run organization based at
             the College of San Mateo. We are a dedicated group that focuses on
             helping others foster their love for coding through collaborative
             projects, weekly meetings, and social events.
-          </h2>
+          </p>
           <p>Join us on a journey of coding, innovation, and collaboration.</p>
           <button class="main__btn"><a href="#">Join Now</a></button>
         </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-1">
+            <i class="fas fa-layer-group"></i>
+          </div>
+        </div>
       </div>
-    </main>
+
+      <!-- Meet the Team Section -->
+      <div class="team__section">
+        <h2>Meet the Team</h2>
+        <div class="team__container">
+          <div class="team__member">
+            <img src="path/to/member1.jpg" alt="Team Member 1" />
+            <h3>Edan</h3>
+            <p>Short description goes here.</p>
+          </div>
+          <div class="team__member">
+            <img src="path/to/member2.jpg" alt="Team Member 2" />
+            <h3>Brendan</h3>
+            <p>Short description goes here.</p>
+          </div>
+          <!-- Add more team members as needed -->
+        </div>
+      </div>
+    </section>
 
     <!-- Calendar Section -->
     <section class="calendar" id="calendar">
       <h1>Upcoming Events</h1>
-      <h2>Add calendar here</h2>
+      <h2>Add calendar here// maybe add map with location</h2>
       <!-- Add your calendar events here -->
     </section>
 
     <!-- Contact Us Section -->
-    <section class="main" id="contact">
-      <div class="main__container">
-        <div class="main__content">
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <div class="contact__content">
           <h1>Contact Us</h1>
           <h2>Get in Touch</h2>
           <p>Have questions or suggestions? Reach out to us!</p>
-          <button class="main__btn"><a href="#">Contact</a></button>
+          <form action="#" class="contact__form">
+            <div class="contact__form-group">
+              <label for="name">Your Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email">Your Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <button type="submit" class="contact__btn">Contact</button>
+          </form>
         </div>
-        <form action="">
-          <label for="name">Your Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-          />
 
-          <label for="email">Your Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-          />
-
-          <input type="submit" value="Submit" />
-        </form>
-        <div class="main__img--container">
-          <div class="main__img--card" id="card-2">
+        <div class="contact__img--container">
+          <div class="contact__img--card" id="card-2">
             <i class="fas fa-comments"></i>
           </div>
         </div>
@@ -110,33 +136,37 @@
 
     <!-- Footer Section -->
     <footer class="footer__container">
-      <div class="container">
-        <div class="footer-col">
-          <h2>CSM Computer Science Club</h2>
-          <p>Connect with us:</p>
-          <div class="social-icons">
-            <a
-              href="https://www.instagram.com/csmcompsci/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://discord.gg/SZk7XsMU"
-              class="discord-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fab fa-discord"></i>
-            </a>
+      <div class="social__media--wrap">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>CSM Computer Science Club</h2>
+            <p>Connect with us:</p>
+            <div class="social__icons">
+              <a
+                href="https://www.instagram.com/csmcompsci/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-instagram social__icon--link"></i>
+              </a>
+              <a
+                href="https://discord.gg/SZk7XsMU"
+                class="discord-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-discord social__icon--link"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <p>&copy;CSM Computer Science Club</p>
+      <p class="website__rights">&copy; CSM Computer Science Club</p>
     </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
+
+<!--add javascript to stop the cotnact words from diapearing each time button is pressed.-->
