@@ -127,6 +127,14 @@
 
   #navbar__logo {
     padding-left: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 10px; 
+    color: #1f3e20;
+    font-family: 'Kumbh Sans', sans-serif;
   }
 
   .navbar__toggle .bar {
@@ -190,6 +198,7 @@
 .hero {
   background: #2c322e; 
   padding: 200px 0;
+  text-align: center;
 }
 
 .hero__container {
@@ -430,70 +439,38 @@
     margin: 2.5rem 0;
   }
 }
-
-/* Calendar Section */
+ /*Calendar Stuff*/
 .calendar {
-  background: #648170; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.calendar h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    background: #f4f4f4; /* Match the background color of the "What We Do" section */
+    padding: 10rem 0; /* Match the padding of the "What We Do" section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .calendar h1 {
+    font-size: 2rem; /* Adjust the font size as needed */
     margin-bottom: 5rem;
-    font-size: 2.5rem;
   }
   
   .calendar__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr; /* Adjust the number of columns as needed */
+    grid-gap: 20px; /* Adjust the gap between cards */
+    max-width: 1300px; /* Add a max-width for better responsiveness */
+    margin: 0 auto;
   }
   
   .calendar__card {
     margin: 10px;
-    height: 425px;
-    width: 300px;
+    height: 500px; /* Match the height of the cards in the "What We Do" section */
+    width: 500px; /* Match the width of the cards in the "What We Do" section */
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-    transition: 0.3s ease-in;
-  }
-  
-  .calendar__card:nth-child(2) {
-    background: #1fa2ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #a6ffcb,
-      #12d8fa,
-      #1fa2ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #a6ffcb,
-      #12d8fa,
-      #1fa2ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
-  .calendar__card:nth-child(3) {
-    background-image: linear-gradient(
-      -225deg,
-      #ddfff2 0%,
-      #83d4a3 29%,
-      #55b54c 67%,
-      #048225 100%
-    );
+    background: #6e8c75;
   }
   
   .calendar__card h2 {
@@ -534,20 +511,20 @@
   
   @media screen and (max-width: 1300px) {
     .calendar__wrapper {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; /* Adjust the number of columns as needed */
     }
   }
   
   @media screen and (max-width: 768px) {
     .calendar__wrapper {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr; /* Adjust the number of columns as needed */
     }
   }
   
   /* Footer CSS */
   .footer__container {
-    background-color: #131313;
-    padding: 5rem 0;
+    background: linear-gradient(to right, #1a1a1a, #131313); /* Example gradient */
+    padding: 50px 0; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -561,6 +538,7 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-weight: bold; 
   }
   
   .footer__links {
@@ -604,6 +582,7 @@
   .social__icon--link {
     color: #fff;
     font-size: 24px;
+    margin-right: 10px;
   }
   
   .social__media {
@@ -630,7 +609,7 @@
   .website__rights {
     color: #fff;
   }
-  
+  /*make sure it looks god on smaller screens*/
   @media screen and (max-width: 820px) {
     .footer__links {
       padding-top: 2rem;
