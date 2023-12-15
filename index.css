@@ -19,6 +19,13 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    opacity: 1; /* Start with full visibility */
+    transition: opacity 1.0s ease-in-out;
+  }
+
+  .navbar.hide {
+    opacity: 0; /* Hide the navbar */
+    transition: opacity 1.0s ease-in-out; /* Add a smooth transition for opacity */
   }
   
   .navbar__container {
@@ -49,6 +56,11 @@
   
   .navbar__item {
     height: 80px;
+  }
+
+  .navbar.hide {
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
   }
   
   .navbar__links {
