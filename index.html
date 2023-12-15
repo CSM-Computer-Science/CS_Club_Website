@@ -3,34 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Computer Science Club</title>
+    <title>CSM Computer Science Club</title>
     <link rel="stylesheet" href="index.css" />
-    <script
-      src="https://kit.fontawesome.com/fc57349c26.js"
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
-    ></script>
+    />
   </head>
   <body>
+    <!-- Navbar Section -->
     <nav class="navbar">
-      <div class="container">
-        <h1 class="logo">CSM Computer Science Club</h1>
-        <ul class="nav-links">
-          <li><a href="About.html">About Us</a></li>
-          <li><a href="Calendar.html">Calendar</a></li>
-          <li><a href="About.html">Contact Us</a></li>
+      <div class="navbar__container">
+        <a href="#home" class="navbar__logo">CS Club</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links">About Us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#calendar" class="navbar__links">Calendar</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__links">Contact Us</a>
+          </li>
         </ul>
       </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
       <div class="overlay">
-        <h1>Welcome!</h1>
-        <p>Club description</p>
+        <h1>Welcome to the Computer Science Club</h1>
       </div>
     </header>
 
-    <main><!-- kanyes album--></main>
+    <!-- About Section -->
+    <main class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fas fa-laptop-code"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>What We Do</h1>
+          <h2>
+            The CSM Computer Science club is a student-run organization based at
+            the College of San Mateo. We are a dedicated group that focuses on
+            helping others foster their love for coding through collaborative
+            projects, weekly meetings, and social events.
+          </h2>
+          <p>Join us on a journey of coding, innovation, and collaboration.</p>
+          <button class="main__btn"><a href="#">Join Now</a></button>
+        </div>
+      </div>
+    </main>
 
+    <!-- Calendar Section -->
+    <section class="services" id="calendar">
+      <h1>Upcoming Events</h1>
+      <!-- Add your calendar events here -->
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="main" id="contact">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Contact Us</h1>
+          <h2>Get in Touch</h2>
+          <p>Have questions or suggestions? Reach out to us!</p>
+          <button class="main__btn"><a href="#">Contact</a></button>
+        </div>
+        <h2>Contact Us</h2>
+        <form action="">
+          <label for="name">Your Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+
+          <label for="email">Your Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+
+          <input type="submit" value="Submit" />
+        </form>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-comments"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
       <div class="container">
         <div class="footer-col">
@@ -54,32 +132,11 @@
             </a>
           </div>
         </div>
-
-        <div class="footer-col">
-          <h2>Contact Us</h2>
-          <form action="">
-            <label for="name">Your Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter your name"
-            />
-
-            <label for="email">Your Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-            />
-
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
       </div>
 
-      <p>&copy; Computer Science Club</p>
+      <p>&copy;CSM Computer Science Club</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
