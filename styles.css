@@ -640,6 +640,9 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  background-image: url('images.jpg'); 
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: 576px) {
@@ -3832,6 +3835,9 @@ textarea.form-control-lg {
     transition: none;
   }
 }
+
+
+
 .navbar-toggler:hover {
   text-decoration: none;
 }
