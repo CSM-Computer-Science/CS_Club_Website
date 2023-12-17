@@ -240,6 +240,7 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .hero__description {
@@ -294,6 +295,7 @@
     -moz-text-fill-color: transparent;
     text-transform: uppercase;
     margin-bottom: 32px;
+    background-clip: text;
   }
   
   .main__content h2 {
@@ -304,6 +306,7 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .main__content p {
@@ -390,7 +393,7 @@
     text-transform: uppercase;
     margin-bottom: 32px;
     font-size: 2rem;
-   
+    background-clip: text;
     padding: 10rem 0;
     text-align: center;
   }
@@ -624,6 +627,7 @@
     -moz-text-fill-color: transparent;
     text-transform: uppercase;
     margin-bottom: 32px;
+    background-clip: text;
   }
   
   .contact__content h2 {
@@ -634,6 +638,7 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .contact__content p {
