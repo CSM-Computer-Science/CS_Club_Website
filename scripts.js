@@ -52,3 +52,41 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+let slideIndex = 1;
+
+function plusDivs(n) {
+    showDivs((slideIndex += n));
+}
+
+function currentDiv(n) {
+    showDivs((slideIndex = n));
+}
+
+function showDivs(n) {
+    let i;
+    const slides = document.getElementsByClassName('mySlides');
+    const dots = document.getElementsByClassName('w3-badge');
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].style.backgroundColor = '#bbb';
+    }
+
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].style.backgroundColor = '#555';
+}
+
+// Initial setup
+showDivs(slideIndex);

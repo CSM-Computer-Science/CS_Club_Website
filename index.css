@@ -10,27 +10,23 @@
   
   /* Navbar */
   .navbar {
-    background: #6fa3d0; /* Blue */
+    background: #6fa3d0; 
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; 
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
     z-index: 999;
-    opacity: 1; /* Start with full visibility */
+    opacity: 1;
     transition: opacity 1.0s ease-in-out;
-  }
-
-  .navbar.hide {
-    opacity: 0; /* Hide the navbar */
-    transition: opacity 1.0s ease-in-out; /* Add a smooth transition for opacity */
   }
   
   .navbar__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -40,12 +36,25 @@
   }
   
   .navbar__logo {
-    background-color: #6fa3d0; /* White */
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+  }
+  
+  .navbar__logo img {
+    height: 50px; 
+    margin-right: 10px; 
+  }
+  
+  .navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
   }
 
   .navbar__menu {
@@ -278,130 +287,57 @@
       font-size: 40px;
     }
   }
-/* About Section */
-.main {
-    background-color: #e9e9e9; /* Light Gray */
-    padding: 10rem 0;
-  }
-  
-  .main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 90%;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-  }
-  
-  .main__content {
-    color: #333; /* Dark Gray */
-    width: 100%;
-  }
-  
-  .main__content h1 {
-    font-size: 2.5rem;
-    background-color: #6fa3d0; /* Blue */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-    background-clip: text;
-  }
-  
-  .main__content h2 {
-    font-size: 1.5rem;
-    background: #a2d2e9; /* Light Blue */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    background-clip: text;
-  }
-  
-  .main__content p {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  
-  .main__btn {
-    font-size: 1.8rem;
-    background: #90b3c7; /* Lighter Blue */
-    padding: 20px 60px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
-  }
-  
-  .main__btn a {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .main__btn:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #72a8d7; /* Dark Gray */
-    transition: all 0.35s;
-    border-radius: 4px;
-  }
-  
-  .main__btn:hover {
-    color: #b5dbff; 
-  }
-  
-  .main__btn:hover:after {
-    width: 100%;
-  }
-  
-  .main__img--container {
+  /*gallery*/
+  #portfolio {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.container {
     text-align: center;
-  }
-  
-  .main__img--card {
-    margin: 10px;
-    height: 500px;
-    width: 500px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #ffffff; 
-    background: #6fa3d0; /* Blue */
-  }
-  
-  .fa-layer-group,
-  .fa-users {
-    font-size: 14rem;
-  }
-  
-  #card-2 {
-    background: #a2d2e9; /* Light Blue */
-  }
-  
+}
+
+.w3-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mySlides {
+    width: 100%;
+    display: none;
+}
+
+.w3-center {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.w3-badge {
+    height: 12px;
+    width: 12px;
+    margin: 0 8px;
+    cursor: pointer;
+    background-color: #bbb;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.6;
+    transition: background-color 0.3s ease;
+}
+
+.w3-badge:hover {
+    background-color: #555;
+}
+
+
   /* Meet the Team */
-  /* Meet the Team Section */
+  
 .team__section {
     font-size: 2.5rem;
-    background-color: #6fa3d0; /* Blue */
+    background-color: #71a4d1; /* Blue */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -858,6 +794,7 @@
   .footer__link--items a:hover {
     color: #b3daf4; /* Lighter Blue */
   }
+
   
   .social__icon--link {
     color: #fff;
