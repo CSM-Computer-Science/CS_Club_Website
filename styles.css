@@ -8273,6 +8273,18 @@ textarea.form-control-lg {
   border-radius: 50% !important;
 }
 
+/*Meant to make square image dimensions be better so they fit in rounded circles*/
+.square-image {
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 .rounded-pill {
   border-radius: var(--bs-border-radius-pill) !important;
 }
