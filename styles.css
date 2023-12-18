@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 255, 200, 0;
+  --bs-primary-rgb: #1e90ff;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -727,7 +727,7 @@ progress {
   width: 16.6666666667%;
 }
 
-.col-auto {
+.auto {
   flex: 0 0 auto;
   width: auto;
 }
@@ -8041,7 +8041,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  --bs-text-opacity: 1;
+  --bs-text-opacity: #1e90ff;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
