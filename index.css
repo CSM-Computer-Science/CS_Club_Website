@@ -287,20 +287,7 @@
       font-size: 40px;
     }
   }
-  /*gallery*/
-  #portfolio .container h2{
-    background-color: #f8f9fa;
-    padding: 60px 0;
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-.carousel-image {
-  height: 300px; /* Adjust the height as needed */
-  object-fit: cover; 
-}
-
-
+  
 
   /* Meet the Team */
   
