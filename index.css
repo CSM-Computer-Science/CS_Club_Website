@@ -218,18 +218,18 @@
     }
   }
 
-  .masthead {
-    background-image: url('images.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    padding: 100px 0;
-    background-color: rgba(0, 0, 0, 0.623);
+  .masthead{
+    background-image: url('backgroundPic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #6fa3d0;
+  padding: 100px 0;
+  background-color: rgba(0, 0, 0, 0.623);
   }
   
   /* Style for masthead content */
-  .masthead-heading {
+  .masthead-heading{
     font-size: 2.5em;
     font-weight: bold;
     text-align: center;
@@ -288,49 +288,18 @@
     }
   }
   /*gallery*/
-  #portfolio {
+  #portfolio .container h2{
     background-color: #f8f9fa;
     padding: 60px 0;
-}
-
-.container {
     text-align: center;
+    margin-bottom: 20px;
+
+}
+.carousel-image {
+  height: 300px; /* Adjust the height as needed */
+  object-fit: cover; 
 }
 
-.w3-content {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.mySlides {
-    width: 100%;
-    display: none;
-}
-
-.w3-center {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.w3-badge {
-    height: 12px;
-    width: 12px;
-    margin: 0 8px;
-    cursor: pointer;
-    background-color: #bbb;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.6;
-    transition: background-color 0.3s ease;
-}
-
-.w3-badge:hover {
-    background-color: #555;
-}
 
 
   /* Meet the Team */

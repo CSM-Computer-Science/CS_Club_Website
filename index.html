@@ -17,6 +17,12 @@
       href="path/to/zoom-favicon.png"
       sizes="32x32"
     />
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JavaScript (Popper.js and Bootstrap JS) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -84,7 +90,7 @@
     <!-- Masthead-->
     <header class="masthead">
       <div class="container">
-        <div class="masthead-heading text-uppercase">Welcome!</div>
+        <div class="masthead-heading text-uppercase ">Welcome!</div>
       </div>
     </header>
     <!-- intitiative-->
@@ -139,23 +145,44 @@
           <h2>Gallery</h2>
          
         </div>
-        
-        <div class="w3-content w3-display-container" style="max-width:800px">
-          <img class="mySlides" src="images/meeting.jpg" style="width:100%">
-          <img class="mySlides" src="robotics.jpg" style="width:100%">
-          <img class="mySlides" src="emilio.JPG" style="width:100%">
-          <img class="mySlides" src="kiona.JPG" style="width:100%">
-          <img class="mySlides" src="hackathon.JPG" style="width:100%">
-          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-        </div>
-      </div>
-    </section>
+       <!-- Carousel -->
+     <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+      </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="meeting.jpg" alt="meeting img" class="d-block w-100 carousel-image" style="width: 500px; height: 600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="robotics.png" alt="robotics img" class="d-block w-100 carousel-image" style="width: 500px; height: 600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="emilio.JPG" alt="emilio img" class="d-block w-100 carousel-image" style="width: 500px; height: 600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="kiona.JPG" alt="kiona img" class="d-block w-100 carousel-image" style="width: 500px; height: 600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="hackathon.png" alt="hackathon img" class="d-block w-100 carousel-image" style="width: 500px; height: 600px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
 
     <!-- About-->
     <section class="page-section" id="about">
