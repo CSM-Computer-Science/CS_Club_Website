@@ -5799,7 +5799,7 @@ textarea.form-control-lg {
 }
 
 .carousel-inner {
-  position: relative;
+  position: center;
   width: 100%;
   overflow: hidden;
 }
@@ -11294,10 +11294,12 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
-  width: 14rem;
-  height: 14rem;
+  width: 14rem; 
+  height: 14rem; 
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Ensure the image covers the entire circle */
 }
+
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
