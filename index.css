@@ -41,7 +41,8 @@
   }
   
   .navbar__logo img {
-   
+    height: 70px; 
+   width: 10px;
     margin-right: 10px; 
   }
   
@@ -751,38 +752,7 @@
   }
 
   
-  .social__icon--link {
-    color: #fff;
-    font-size: 2rem; /* Adjusted size */
-    margin-right: 10px;
-    transition: color 0.3s ease; /* Added transition property for smooth color change */
-  }
-  
-  .social__icon--link:hover {
-    color: #535556; /* Lighter Blue on hover */
-  }
-  
-  .social__media {
-    max-width: 1000px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .social__media--wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto 0 auto; /* Adjusted margin */
-  }
-  
-  .social__icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  .
   .website__rights {
     color: #fff;
     margin-top: 20px; /* Improved spacing */
@@ -797,7 +767,7 @@
     #footer__logo {
       margin-bottom: 2rem;
     }
-  
+    
     .website__rights {
       margin-bottom: 2rem;
     }
@@ -805,11 +775,15 @@
     .footer__link--wrapper {
       flex-direction: column;
     }
-  
-    .social__media--wrap {
-      flex-direction: column;
+    
+    .social-icons{
+
     }
-  }
+
+    .social-icons:hover i{
+      color: #57bbed;
+    }
+    
   
   @media screen and (max-width: 480px) {
     .footer__link--items {
