@@ -10893,6 +10893,9 @@ p {
   border-radius: 100%;
 }
 
+.btn-social:hover{
+  color:#1e90ff;
+}
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
