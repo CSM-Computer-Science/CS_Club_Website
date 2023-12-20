@@ -11141,6 +11141,7 @@ header.masthead .masthead-heading {
   padding: 0;
   list-style: none;
 }
+
 .timeline:before {
   position: absolute;
   top: 0;
@@ -11194,6 +11195,11 @@ header.masthead .masthead-heading {
   border: 7px solid #e9ecef;
   border-radius: 100%;
   background-color: #1e90ff;
+  transition: transform 0.3 ease;
+}
+
+.timeline > li .timeline-image:hover {
+  transform: scale(1.1);
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
