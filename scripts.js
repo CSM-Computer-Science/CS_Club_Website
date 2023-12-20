@@ -7,7 +7,6 @@
 // Scripts
 // 
 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -17,11 +16,10 @@ window.addEventListener('DOMContentLoaded', event => {
             return;
         }
         if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
+            navbarCollapsible.classList.remove('navbar-shrink');
         } else {
-            navbarCollapsible.classList.add('navbar-shrink')
+            navbarCollapsible.classList.add('navbar-shrink');
         }
-
     };
 
     // Shrink the navbar 
@@ -91,4 +89,3 @@ function showDivs(n) {
 
 // Initial setup
 showDivs(slideIndex);
-
