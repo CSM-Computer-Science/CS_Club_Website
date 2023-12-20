@@ -91,3 +91,4 @@ function showDivs(n) {
 
 // Initial setup
 showDivs(slideIndex);
+

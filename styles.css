@@ -11016,7 +11016,7 @@ header.masthead::after {
   image-rendering: auto;
   -webkit-image-rendering: auto;
   image-rendering: crisp-edges;
-  opacity: 0.7; /* Adjust the opacity value (0 to 1) for the background image */
+  opacity: 0.6; /* Adjust the opacity value (0 to 1) for the background image */
 }
 
 header.masthead .masthead-subheading {
