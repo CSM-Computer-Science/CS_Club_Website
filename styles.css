@@ -1121,11 +1121,6 @@ progress {
     transition: transform 0.3s ease;
   }
   
-  .fa-stack:hover{
-    color:#1e90ff;
-    transform: scale(1.1);
-  }
-  
   .col-md-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
@@ -11219,9 +11214,6 @@ header.masthead .masthead-heading {
   transition: transform 0.3 ease;
 }
 
-.timeline > li .timeline-image:hover {
-  transform: scale(1.1);
-}
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
   line-height: 14px;
