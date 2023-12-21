@@ -10892,6 +10892,7 @@ p {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
+  color: #fff
 }
 
 @media (min-width: 768px) {
@@ -11030,7 +11031,7 @@ header.masthead::after {
   image-rendering: auto;
   -webkit-image-rendering: auto;
   image-rendering: crisp-edges;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 
