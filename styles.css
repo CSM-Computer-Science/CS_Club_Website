@@ -11405,10 +11405,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 /*chatbot styles*/
 df-messenger {
-  --df-messenger-bot-message: #878fac;
-  --df-messenger-button-titlebar-color: #df9b56;
-  --df-messenger-chat-background-color: #fafafa;
+  --df-messenger-bot-message: #A8A8A8;
+  --df-messenger-button-titlebar-color: #3FA0FF;
+  --df-messenger-chat-background-color: #1e90ff;
   --df-messenger-font-color: white;
   --df-messenger-send-icon: #878fac;
-  --df-messenger-user-message: #479b3d;
+  --df-messenger-user-message: #7C7C7E;
  }
