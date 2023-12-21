@@ -11409,3 +11409,13 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+/*chatbot styles*/
+df-messenger {
+  --df-messenger-bot-message: #878fac;
+  --df-messenger-button-titlebar-color: #df9b56;
+  --df-messenger-chat-background-color: #fafafa;
+  --df-messenger-font-color: white;
+  --df-messenger-send-icon: #878fac;
+  --df-messenger-user-message: #479b3d;
+ }
