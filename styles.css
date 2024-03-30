@@ -5796,6 +5796,8 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  max-width: 15000px;
+  margin: 0 auto;
 }
 
 .carousel.pointer-event {
@@ -5803,6 +5805,7 @@ textarea.form-control-lg {
 }
 
 .carousel-inner {
+  max-height: 700px;
   position: center;
   width: 100%;
   overflow: hidden;
@@ -5822,6 +5825,8 @@ textarea.form-control-lg {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+  max-width: 100%; /* Ensure images inside carousel items fit within the container */
+    height: auto; /
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -11412,3 +11417,52 @@ df-messenger {
   --df-messenger-send-icon: #878fac;
   --df-messenger-user-message: #7C7C7E;
  }
+
+
+ .contact-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.invalid-feedback {
+  color: red;
+  display: none;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.contact-section p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}

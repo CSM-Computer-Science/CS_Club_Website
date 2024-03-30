@@ -84,7 +84,7 @@
             </li>
             <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact-section">Contact</a>
             </li>
           </ul>
         </div>
@@ -201,7 +201,7 @@
             <div class="timeline-image">
               <img
                 class="rounded-circle img-fluid square-image"
-                src="images/rizz.png"
+                src="presidential.png"
                 alt="..."
               />
             </div>
@@ -267,7 +267,7 @@
             <div class="timeline-image">
               <img
                 class="rounded-circle img-fluid square-image"
-                src="images/hackathon.png"
+                src="images/kid_on_computer.JPG"
                 alt="..."
               />
             </div>
@@ -402,107 +402,47 @@
     </section>
   
     <!-- Contact-->
-    <section class="page-section" id="contact">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
-          <h3 class="section-subheading">
-            Please reach out with any questions or comments!
-          </h3>
-        </div>
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- * * SB Forms Contact Form * *-->
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- This form is pre-integrated with SB Forms.-->
-        <!-- To make this form functional, sign up at-->
-        <!-- https://startbootstrap.com/solution/contact-forms-->
-        <!-- to get an API token!-->
-        <form id="contactForm" action="mailto:edanbarriosidr@my.smccd.edu" method="post" enctype="text/plain">
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Please feel free to reach out to us with any questions, comments, or feedback you may have. We would love to hear from you!</p>
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="7204f40e-2bb0-44f2-9af3-15bb29f3d708">
+  
           <div class="row align-items-stretch mb-5">
-            <div class="col-md-6">
-              <div class="form-group">
-                <!-- Name input-->
-                <input
-                  class="form-control"
-                  id="name"
-                  type="text"
-                  placeholder="Your Name *"
-                  data-sb-validations="required"
-                />
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  A name is required.
-                </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <!-- Name input -->
+                      <input class="form-control" id="name" type="text" name="name" placeholder="Your Name *" required>
+                      <div class="invalid-feedback" data-sb-feedback="name:required">
+                          A name is required.
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <!-- Email address input -->
+                      <input class="form-control" id="email" type="email" name="email" placeholder="Your Email *" required>
+                      <div class="invalid-feedback" data-sb-feedback="email:required">
+                          An email is required.
+                      </div>
+                      <div class="invalid-feedback" data-sb-feedback="email:email">
+                          Email is not valid.
+                      </div>
+                  </div>
               </div>
-              <div class="form-group">
-                <!-- Email address input-->
-                <input
-                  class="form-control"
-                  id="email"
-                  type="email"
-                  placeholder="Your Email *"
-                  data-sb-validations="required,email"
-                />
-                <div class="invalid-feedback" data-sb-feedback="email:required">
-                  An email is required.
-                </div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">
-                  Email is not valid.
-                </div>
+              <div class="col-md-6">
+                  <div class="form-group form-group-textarea mb-md-0">
+                      <!-- Message input -->
+                      <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required></textarea>
+                      <div class="invalid-feedback" data-sb-feedback="message:required">
+                          A message is required.
+                      </div>
+                  </div>
               </div>
-              <div class="form-group mb-md-0">
-               
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group form-group-textarea mb-md-0">
-                <!-- Message input-->
-                <textarea
-                  class="form-control"
-                  id="message"
-                  placeholder="Your Message *"
-                  data-sb-validations="required"
-                ></textarea>
-                <div
-                  class="invalid-feedback"
-                  data-sb-feedback="message:required"
-                >
-                  A message is required.
-                </div>
-              </div>
-            </div>
           </div>
-          <!-- Submit success message-->
-          <!---->
-          <!-- This is what your users will see when the form-->
-          <!-- has successfully submitted-->
-          <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center text-white mb-3">
-              <div class="fw-bolder">Form submission successful!</div>
-              
-            </div>
-          </div>
-          <!-- Submit error message-->
-          <!---->
-          <!-- This is what your users will see when there is-->
-          <!-- an error submitting the form-->
-          <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">
-              Error sending message!
-            </div>
-          </div>
-          <!-- Submit Button-->
-          <div class="text-center">
-            <button
-              class="btn btn-primary btn-xl text-uppercase disabled"
-              id="submitButton"
-              type="submit"
-            >
-              Send Message
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+  
+          <button type="submit" class="btn btn-primary">Submit Form</button>
+      </form>
+  </section>
+  
     
     <!-- Footer-->
     <footer class="footer py-4">
