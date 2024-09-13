@@ -89,3 +89,7 @@ function showDivs(n) {
 
 // Initial setup
 showDivs(slideIndex);
+
+
+//confirguring dotenv
+require('dotenv').config();

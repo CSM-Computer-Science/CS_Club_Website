@@ -17,3 +17,12 @@ window.addEventListener('scroll', handleScroll);
 
 // Add a scroll event listener
 window.addEventListener('scroll', handleScroll);
+
+
+//dotenv
+require('dotenv').config();
+
+app.get('/your-route', (req, res) => {
+  res.render('your-view', { accessKey: process.env.ACCESS_KEY });
+});
+
