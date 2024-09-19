@@ -640,7 +640,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
-  background-image: url('images.jpg'); 
+  background-image: url('images.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -1120,7 +1120,7 @@ progress {
   .fa-stack{
     transition: transform 0.3s ease;
   }
-  
+
   .col-md-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
@@ -5806,9 +5806,10 @@ textarea.form-control-lg {
 
 .carousel-inner {
   max-height: 700px;
-  position: center;
-  width: 100%;
+  width: 80%;
+  margin: 1rem auto;
   overflow: hidden;
+  border-radius: 28px;
 }
 .carousel-inner::after {
   display: block;
@@ -5822,11 +5823,12 @@ textarea.form-control-lg {
   float: left;
   width: 100%;
   margin-right: -100%;
+  margin-top: -20%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
   max-width: 100%; /* Ensure images inside carousel items fit within the container */
-    height: auto; /
+  height: auto;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -5883,7 +5885,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 10%;
   padding: 0;
   color: #fff;
   text-align: center;
@@ -5934,17 +5936,17 @@ textarea.form-control-lg {
   } ]
 } */
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -4rem;
   left: 0;
   z-index: 2;
   display: flex;
@@ -5958,14 +5960,15 @@ textarea.form-control-lg {
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
   padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 7px;
+  margin-left: 7px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #000000;
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
@@ -10825,7 +10828,7 @@ textarea.form-control-lg {
   .navbar-brand {
     padding-right: 0;
     padding-left: 0;
-    margin-right: 0; 
+    margin-right: 0;
   }
 
   .navbar__logo {
@@ -10834,7 +10837,7 @@ textarea.form-control-lg {
   }
 
   .navbar-title {
-    font-size: 1rem; 
+    font-size: 1rem;
     margin-left: 10px; /* Adjust as needed */
   }
 }
@@ -11333,8 +11336,8 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
-  width: 14rem; 
-  height: 14rem; 
+  width: 14rem;
+  height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
   object-fit: cover; /* Ensure the image covers the entire circle */
 }
